@@ -1,5 +1,6 @@
 from email.mime import image
 import qrcode 
 
-image = qrcode.make("https://github.com/Anaportfolio/QR-Code")
-image.save("primeiro_qrcode.jpg")
+link = input ("Digite o link: ")
+image = qrcode.make(link)
+image.save("segundo_qrcode.jpg")
